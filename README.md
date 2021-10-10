@@ -4,7 +4,7 @@
 
 1. Install node.js
 2. Open a terminal in the cloned project folder
-3. Run 'npm install react'
+3. Run 'npm install react semantic-ui-react semantic-ui-css @artsy/fresnel'
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
