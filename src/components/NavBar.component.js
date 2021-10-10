@@ -58,12 +58,12 @@ const NavBarMobile = (props) => {
       >
         <Menu fixed="top" inverted>
           <Menu.Item>
-            <Image size="mini" src="https://react.semantic-ui.com/logo.png" />{/*TODO: Change Logo*/}
+            <Image size="mini" src="https://react.semantic-ui.com/logo.png" />{/*TODO: #6 Change Logo*/}
           </Menu.Item>
           <Menu.Item onClick={onToggle}>
             <Icon name="sidebar" />
           </Menu.Item>
-          <Menu.Menu position="right"> {/*TODO: Ideally, this could become MUCH bigger on mobile. Will have to work on that*/}
+          <Menu.Menu position="right"> {/*TODO: #7 Ideally, this could become MUCH bigger on mobile. Will have to work on that*/}
             <Menu.Item>
               <TimerStartButton/>
               <ProjectSelect/>
@@ -81,7 +81,7 @@ const NavBarDesktop = (props) => {
   return (
     <Menu fixed="top" inverted>
       <Menu.Item>
-        <Image size="mini" src="https://react.semantic-ui.com/logo.png" /> {/*TODO: Change Logo*/}
+        <Image size="mini" src="https://react.semantic-ui.com/logo.png" /> {/*TODO: #6 Change Logo*/}
       </Menu.Item>
 
       <Menu.Item as='a'>
