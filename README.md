@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+## Dev Setup
+
+1. Install node.js
+2. Open a terminal in the cloned project folder
+3. Run 'npm install react'
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
