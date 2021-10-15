@@ -1,9 +1,18 @@
 import React, {useState} from "react";
 import Login from "./components/pages/Login";
-import useToken from "./components/useToken";
+
+function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem('token');
+  const userToken = JSON.parse(tokenString);
+  return userToken?.token
+}
 
 function App() {
-  const [token, setToken] = useToken(); //define the tokens for login checking
+  const token = getToken(); //define the tokens for login checking
 
   if(!token) { //check if the user is logged in
     return <Login setToken={setToken} />  //direct to login page
