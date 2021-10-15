@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Grommet} from 'grommet';
+import {grommet, Grommet} from 'grommet';
 
 const theme = {
   global: {
@@ -16,7 +16,7 @@ const theme = {
 };
 
 ReactDOM.render(
-  <Grommet theme={theme}>
+  <Grommet theme={grommet}>
     <App />
   </Grommet>,
   document.getElementById('root')
