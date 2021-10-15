@@ -7,10 +7,10 @@ export default function NavBar() {
   const [timerRunning, setTimer] = useState(false);
   function handleTimer() {
     if (timerRunning) {
-      //TODO: Create Stop Timer API Call
+      //TODO: #21 Create Stop Timer API Call
       setTimer(false);
     } else {
-      //TODO: Create Start Timer API Call
+      //TODO: #22 Create Start Timer API Call
       setTimer(true);
     }
 
@@ -27,7 +27,7 @@ export default function NavBar() {
       elevation='medium'
     >
       <Box direction="row">
-        <Heading level="3"><DocumentTime /> Timey</Heading>
+        <Heading level="3"><DocumentTime /> Timey</Heading> {/*TODO: #6 We need a logo*/} {/*TODO: #2 We need a better name*/}
         <Nav pad="small" justify="center">
           <Button icon={<Home />}  label="Dashboard" href="/" />
         </Nav>
@@ -49,7 +49,7 @@ export default function NavBar() {
         <Select
           options={['first', 'second', 'third']}
           value={project}
-          onChange={({ option }) => setProject(option)}
+          onChange={({ option }) => setProject(option)} //TODO: #23 Create a handler for project timer switching
         />
       </Box>
     </Box>

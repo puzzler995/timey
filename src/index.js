@@ -16,7 +16,7 @@ const theme = {
 };
 
 ReactDOM.render(
-  <Grommet theme={grommet}>
+  <Grommet theme={grommet}> {/*TODO: #20 Need to replace the grommet theme with a custom theme */}
     <App />
   </Grommet>,
   document.getElementById('root')
