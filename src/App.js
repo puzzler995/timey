@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Router } from "react-router";
 import Login from "./components/pages/Login";
 
 function setToken(userToken) {
@@ -19,8 +20,8 @@ function App() {
   }
 
   return (
-    <>
-    </>
+    <Router>
+    </Router>
   );
 
 }
