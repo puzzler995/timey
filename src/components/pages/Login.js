@@ -14,6 +14,7 @@ export default function Login({ setToken }) {
     e.preventDefault();
     const token = await loginUser(form);
     setToken(token);
+    window.location.reload(false);
   }
 
   return (
