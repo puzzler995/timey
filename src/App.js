@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Router } from "react-router";
+import { BrowserRouter as Router } from "react-router-dom";
 import Login from "./components/pages/Login";
 
 function setToken(userToken) {
