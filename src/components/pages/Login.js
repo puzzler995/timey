@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {Box, Button, Card, CardBody, CardFooter, CardHeader, Form, FormField, Heading, TextInput} from 'grommet';
+import {Box, Button, Card, CardBody, CardFooter, Form, FormField, Heading, TextInput} from 'grommet';
 import PropTypes from 'prop-types';
 
 async function loginUser(credentials) {
-  //TODO: Need to Hash Passwords before sending to API in plaintext
-  return {"token":"test"}; //TODO: Build an actual login API request here
+  //TODO: #15 Need to Hash Passwords before sending to API in plaintext
+  return {"token":"test"}; //TODO: #16 Build an actual login API request here
 }
 
 export default function Login({ setToken }) {
