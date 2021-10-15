@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'semantic-ui-css/semantic.min.css'
+import {Grommet} from 'grommet';
+
+const theme = {
+  global: {
+    font: {
+      family: 'Roboto',
+      size: '14px',
+      height: '20px',
+    },
+  },
+};
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Grommet theme={theme}>
     <App />
-  </React.StrictMode>,
+  </Grommet>,
   document.getElementById('root')
 );
 
