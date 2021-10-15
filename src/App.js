@@ -1,8 +1,8 @@
+import { Box } from "grommet";
 import React, {useState} from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Login from "./components/pages/Login";
-import {
-  BrowserRouter as Router,
-} from "react-router-dom";
+import NavBar from "./components/parts/NavBar";
 
 function setToken(userToken) {
   sessionStorage.setItem('token', JSON.stringify(userToken));
@@ -23,7 +23,11 @@ function App() {
 
   return (
     <Router>
-  </Router>
+      <NavBar />
+      <Box fill align='center' justify='center'>
+        <p>BOOP</p>
+      </Box>
+    </Router>
   );
 
 }
