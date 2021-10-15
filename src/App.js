@@ -1,6 +1,8 @@
 import React, {useState} from "react";
-import { Router } from "react-router";
 import Login from "./components/pages/Login";
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 function setToken(userToken) {
   sessionStorage.setItem('token', JSON.stringify(userToken));
@@ -21,7 +23,7 @@ function App() {
 
   return (
     <Router>
-    </Router>
+  </Router>
   );
 
 }
